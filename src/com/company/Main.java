@@ -39,6 +39,15 @@ public class Main {
                     a[23] = "zsdc";
                     a[24] = "tghju";
                     a[25] = "asx";
+                 if (bohr.contains(word)) {
+                     bw.write("correct");
+                     bw.newLine();
+                 }
+                 else {
+                     bw.write("incorrect");
+                     bw.newLine();
+                 }
+                 bw.newLine();
                  for (int j = 0; j < word.length(); j++) {
                      for (int t = 0; t <  a[word.charAt(j) - 'a'].length(); t++) {
                          String s = word.substring(0, j) + a[word.charAt(j) - 'a'].charAt(t) + word.substring(j + 1);
