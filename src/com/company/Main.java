@@ -48,6 +48,7 @@ public class Main {
                      bw.newLine();
                  }
                  bw.newLine();
+
                  for (int j = 0; j < word.length(); j++) {
                      for (int t = 0; t <  a[word.charAt(j) - 'a'].length(); t++) {
                          String s = word.substring(0, j) + a[word.charAt(j) - 'a'].charAt(t) + word.substring(j + 1);
